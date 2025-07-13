@@ -1,0 +1,22 @@
+OS module in python is used for system-level tasks in Python
+
+examples:
+1. os.system("echo Hello!") #- Executes system commands directly from Python.
+2. user = os.environ.get("USERNAME") #- Process and User Info
+- os.getpid() — Get current process ID
+- os.getlogin() — Get the current logged-in user
+- os.uname() — System details (on Unix)
+- 🔒 Permissions & UIDs
+3. os.getuid(), os.getgid()
+4. os.listdir(directory)# files and folder handeling.
+
+
+
+Python’s datetime module contains a class also called datetime, thats why we need to import its as "from datetime import datetime"
+
+
+What is os.path really for ?
+ - Build paths eg. path = os.path.join("folder", "subfolder", "file.txt")
+ - Break them apart print(os.path.split("/home/user/notes.txt"))
+ - Check if they exist print(os.path.isfile("notes.txt")) and print(os.path.isdir("Documents"))
+ - Get metadata about them (like size, type, etc.) print(os.path.getsize("notes.txt"))
